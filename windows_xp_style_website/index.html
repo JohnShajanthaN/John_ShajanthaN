@@ -1410,10 +1410,24 @@ document.addEventListener('keydown', function(event) {
         return true;
     }
 
+
+document.addEventListener('keydown', function(e) 
+{
+    // Check if Ctrl key is pressed and the pressed key is 's'
+    if (e.ctrlKey && e.key === 's') {
+        // Prevent the browser's default save action
+        e.preventDefault();
+        // Optionally, add custom behavior here, e.g., display a message
+        console.log('Ctrl+S is disabled on this page.');
+    }
+});
+
+
 		  function disableRightClick() 
 		  {
   // Disable context menu
-  document.addEventListener('contextmenu', function (event) {
+  document.addEventListener('contextmenu', function (event) 
+{
     event.preventDefault();
     return false;
   })
