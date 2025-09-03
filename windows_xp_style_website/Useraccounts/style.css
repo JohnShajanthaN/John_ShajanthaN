@@ -1,0 +1,111 @@
+#wrapper {
+  width: 30%;
+  margin: 50px auto;
+  padding: 50px;
+  background: white;
+}
+form {
+  margin: 30px auto;
+}
+.textInput
+ {
+  border-radius:25px;
+  height: 28px;
+  margin-top:8px;
+  margin-bottom:8px;
+  border:solid 1px green;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+  border-color:orange;
+  
+}
+
+.textInput:hover
+ {
+  border-radius:25px;
+  height: 28px;
+  margin-top:8px;
+  margin-bottom:8px;
+  border:solid 1px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+  border-color:purple;
+  
+}
+
+label
+{
+	text-shadow:0.5px 0px grey;
+	letter-spacing:0.5px;
+}
+
+label:hover
+{
+	font-weight:bold;
+	text-shadow:0.5px 0px grey;
+	letter-spacing:0.5px;
+	color:purple;
+}
+
+.textInput:focus 
+{
+   border-radius:25px;
+  height: 28px;
+  margin-top:8px;
+  margin-bottom:8px;
+  border:solid 1px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+  border-color:purple;
+}
+
+.btn {
+  width: 98.6%;
+  border: none;
+  margin-top: 5px;
+  color: black;
+  font-weight:bold;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 12px;
+  border-radius:25px;
+  font-size:16px;
+  font-weight:bold;
+ text-shadow:0.5px 0px grey;
+ letter-spacing:0.5px;
+}
+
+.btn:hover {
+  width: 98.6%;
+  border: none;
+  margin-top: 5px;
+  color: white;
+  font-weight:bold;
+  background-color: purple;
+  border-radius: 5px;
+  padding: 12px;
+  border-radius:25px;
+  font-size:16px;
+  font-weight:bold;
+ text-shadow:0.5px 0px grey;
+ letter-spacing:0.5px;
+}
+
+#error
+{
+  height: 20px;
+  border:solid 1px;
+  font-size:14px;
+  padding: 5px;
+  width: 95%;
+  margin-top:2px;  
+  margin-bottom:2px;
+  border-color:white;
+  text-shadow:0.5px 0px grey;
+  letter-spacing:0.1px;
+  font-weight:bold;
+  display:none;
+}

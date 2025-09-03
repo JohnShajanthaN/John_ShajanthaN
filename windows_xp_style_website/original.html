@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title> Windows X </title>
+        
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+        <link rel="icon" href="favico.png" type="image/png" sizes="16x16">
+        
+        <script type="text/javascript" src="index.js"> </script>
+        
+        <script src="https://kit.fontawesome.com/8f66989127.js" crossorigin="anonymous"> </script>
+        
+        <script type="text/javascript">
+        
+    function mousehandler(e)
+    {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    
+    function disableCtrlKeyCombination(e)
+    {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        
+        if (window.event) 
+        {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        
+        else 
+        {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        
+        if (isCtrl) 
+        {
+            for (i = 0; i < forbiddenKeys.length; i++) 
+            {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+                {
+                    return false;
+                }
+            }
+        }
+        
+        return true;
+    }
+    
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+    
+    document.onkeydown = function(e)
+    {
+       
+  
+
+        if ( (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)
+             ) || (e.ctrlKey && e.shiftKey && e.keyCode===73) )
+        {
+                 
+            return false;
+        } 
+        else 
+        {
+            return true;
+        }
+};
+
+$(document).keypress("u",function(e) 
+
+{
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+}
+
+);
+
+
+</script>
+
+
+        <style>
+
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {gsc-input
+  padding: 5px;
+  text-align: left;
+}
+
+
+</style>
+        
+        
+    </head>
+    
+    <body oncontextmenu="return false">
+        
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    
+    <div class="elfsight-app-745b213d-726c-4520-955e-6d15ab8cbbc4"></div>
+    
+      <section id="startmenu">
+        
+       <button type="button" onclick="next()" style="width:100%;height:100%;background-color:white;position:fixed;bottom:0;right:0;margin-top:-151px;border:0px;"> <!-- id="btn" -->
+        
+       <div id="icon">
+       
+       <div class="ibox1">
+       </div>
+       
+       <div class="ibox2">
+       </div>
+       
+       <div class="ibox3">
+       </div>
+       
+       <div class="ibox4">
+       </div>
+    
+       </div>
+       
+       <div id="iconname">
+        Windows X
+       </div>
+       
+       </button>
+       
+       </section>
+       
+       
+       
+       
+   <section id="mainscreen">  <!-- onclick="hideall() -->
+       
+
+   <section id="console" style="margin-left:35.5%;">
+   
+   <div id="cmdhead">
+   John_Shajanthan
+   </div>
+  
+   <div id="cmdhead0">
+   
+   <div id="exit" onclick="exit()">
+   X
+   </div>
+   
+   <div id="maximize" onclick="maximize()">   
+   </div>
+   
+   <div id="minimize" onclick="minimize()">     
+   </div>
+   
+   </div>
+ 
+   
+   <div id="cmdbody0">
+   >
+   </div>
+   
+   <textarea id="cmdbody">
+   
+   </textarea>
+   
+
+   </section>
+   
+    <!-- Drop Down Website List fas fa-globe -->
+  
+    <div id="navlist1" style="margin-left:42.5%;"> 
+    
+   <i class="fas fa-globe desicon2" style="width:75px;color:purple;font-size:22px;margin-top:7px;display:block;" onclick="radiogarden()"> </i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:orange;display:block;" onclick="internetlivestats()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="flightradar24()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:green;display:block;" onclick="photopea()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:red;display:block;" onclick="10minutemail()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:grey;display:block;" onclick="reelgood()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="giphy()"></i> 
+
+    </div>
+    
+    
+    
+    <div id="navlist2" style="margin-left:45.5%;"> <!-- 47.5%; -->
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:purple;font-size:22px;margin-top:7px;display:block;" onclick="mailtrack()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:orange;display:block;" onclick="cloudhq()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="keep()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:green;display:block;" onclick="faxzero()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:red;display:block;" onclick="oceansofgamess()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:grey;display:block;" onclick="zerodollarmovies()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="geekprank()"></i> 
+
+    </div>
+    
+    
+    
+    <div id="navlist3" style="margin-left:49%;">  <!-- 52%%; -->
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:purple;font-size:22px;margin-top:7px;display:block;" onclick="yandex()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:orange;display:block;" onclick="tineye()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="labnol()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:green;display:block;" onclick="prepostseo()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:red;display:block;" onclick="haveibeenpwned()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:grey;display:block;" onclick="prepostseo()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="printfriendly()"></i> 
+
+    </div>
+    
+    
+    
+    <div id="navlist4" style="margin-left:52.5%;"> <!-- 56.5% -->
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:purple;font-size:22px;margin-top:7px;display:block;" onclick="squarespace()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:orange;display:block;" onclick="wix()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="weebly()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:green;display:block;" onclick="wordpress()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:red;display:block;" onclick="godaddy()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:grey;display:block;" onclick="bluehost()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="hostinger()"></i> 
+
+    </div>
+    
+    
+    <div id="navlist5" style="margin-left:56%;"> <!-- 56.5% -->
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:purple;font-size:22px;margin-top:7px;display:block;" onclick="freepdfconvert()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:orange;display:block;" onclick="adobe()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="pdftoword()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:green;display:block;" onclick="smallpdf()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:red;display:block;" onclick="ilovepdf()"></i> 
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:grey;display:block;" onclick="online2pdf()"></i>
+    
+    <i class="fas fa-globe desicon2" style="width:75px;color:brown;display:block;" onclick="pdf2go()"></i> 
+
+    </div>
+    
+    <!-- Drop Down Website List -->
+
+    
+    <div id="navtop" style="margin-left:42.5%;display:none;"> <!-- margin-left:42.5%; -->
+    
+    <i class="fab fa-apple desicon1" style="color:purple;font-size:22px;margin-top:2px;" onclick="hide_sidebar1()"></i>  
+    <i class="fas fa-tools desicon1" style="color:orange;" onclick="hide_sidebar2()"></i>
+    
+    <i class="fab fa-chrome desicon1" style="color:brown;" onclick="hide_sidebar3()"></i> 
+    <!-- onclick="searchopen() -->
+    
+    <i class="fas fa-laptop" style="color:green;margin-left:7.5%;
+    margin-top:0px;
+    margin-bottom:9px;
+    font-size:18px;" onclick="hide_sidebar4()"></i> 
+    
+    <i class="fas fa-recycle" style="color:red;margin-left:8%;
+    margin-top:0px;
+    margin-bottom:9px;
+    margin-right:0px;
+    font-size:18px;" onclick="hide_sidebar5()"></i>  
+    
+    <!-- onclick="cmdopen()" -->
+     
+    <!-- i class="fas fa-recycle desicon1" style="color:brown;" > </i> -->
+    
+    
+    </div>
+    
+    <div id="icond" onMouseOver="show_sidebar()"> <!-- onclick="showddm()" onMouseOut="hide_sidebar()" -->
+    
+    <div class="iboxa">
+    </div>
+    <div class="iboxb">
+    </div>
+    <div class="iboxc">
+    </div>
+    <div class="iboxd">
+    </div>
+    <div class="iboxe">
+    </div>
+    
+    </div>
+   
+   
+<br>
+
+<!--
+<div id="chromesearch" style="display:none;">
+<script async src="https://cse.google.com/cse.js?cx=5843fb1f06920806a"></script>
+</div>
+-->
+
+ 
+<div class="gcse-search" style="display:none;">
+<script async src="https://cse.google.com/cse.js?cx=5843fb1f06920806a"></script>
+</div>
+
+
+
+      <div>
+	  
+      <form method="post" action="a.jsp">
+	  
+	  <font size=5 face="Times New Roman">
+      <input type="text" name="nicnumber">
+	  <br>    
+      </font>
+      <br>
+
+     <input type="submit" name="result">
+
+      </form>
+	  
+	  </div>
+	  
+	  
+
+
+<!--
+<div id="chromesearch" style="border:1px solid lightgrey;width:90%;height:30px;padding-left:10px;margin-left:25px;display:none;"> 
+
+<input type="text" size="6" style="width:99%;padding:0px;margin-left:2px;margin-top:4px;margin-bottom:4px;height:19px;border-style:none;border-shadow:2px 1px purple;background-image:url('branding.png');background-repeat:no-repeat;">
+</div>
+-->
+
+
+<!-- <div class="gcse-search" style="display:none;"> </div> -->
+
+ 
+    <i class="fas fa-laptop desicon11" style="margin-top:10px;color:green;"></i>
+    <div class="diconname">
+    My PC
+    </div>
+    <br>
+    
+    
+    <i class="fas fa-tools desicon11" style="color:purple;"></i>
+    <div class="diconname">
+    Control 
+    </div>
+    <br>
+   
+    <i class="fas fa-recycle desicon11" style="color:brown;"></i> 
+    <div class="diconname">
+    Recycle
+    </div>
+    <br>
+    
+   
+    <a href="mail.google.com/index.php" style="text-decoration:none;width:50px;"> 
+    <i class="fas fa-envelope desicon11" style="color:red;"></i>
+    <div class="diconname">
+    Gmail
+    </div>
+    </a>
+    <br>
+    
+    
+    <a href="Facebook.com/index.php" style="text-decoration:none;width:50px;"> 
+    <i class="fab fa-facebook desicon11" style="color:blue;font-size:22px;"></i>  
+    <div class="diconname" style="margin-left:2px;">
+    Facebook
+    </div>
+    </a>
+    <br>
+    
+    <a href="sliate.ac.lk/index.php" style="text-decoration:none;width:50px;"> 
+    <img src="sliate.ac.lk/img/SLIATE.ico" class="desicon11" style="color:blue;font-size:22px;">  
+    <div class="diconname" style="margin-left:2px;">
+    ATI
+    </div>
+    </a>
+    <br>
+    
+    <a href="github.com/index.php" style="text-decoration:none;width:50px;"> 
+    <i class="fab fa-github desicon11" style="color:black;font-size:22px;"></i>  
+    <div class="diconname" style="margin-left:2px;">
+    Github
+    </div>
+    </a>
+    <br>
+    
+    
+    <i class="fab fa-apple desicon11" style="color:grey;font-size:22px;"></i>  
+    <div class="diconname" style="margin-left:2px;">
+    Apple 
+    </div>
+    
+     <br>
+  
+    
+    <!-- Windows Xp Start -->
+     
+    <!--
+     
+    <ul id="ulsty" style="display:none;">
+    
+    <li class="liitem"> 
+    
+   <div class="actusronline">
+   <i class="fas fa-user-tie ausr"> 
+   </i> 
+   
+   </div>
+   
+   <div class="usrnamehead">
+      Hi John
+   </div>
+       
+   </li>
+        
+    <li class="liitem">
+    
+    <a href="https://docs.google.com/" style="text-decoration:none;">
+        
+    
+    <div class="word">
+    W
+    </div>
+    <div class="usrname">
+    Word
+    </div>
+    
+    </a>
+    
+    </li>
+    
+    <li class="liitem"> 
+    <a href="https://www.google.com/sheets/about/" style="text-decoration:none;">
+    
+    
+    <div class="excel">
+    X
+    </div>
+    <div class="usrname">
+    Excel
+    </div>
+    
+    </a>
+    
+    </li>
+    
+    <li class="liitem"> 
+    
+    <div class="access">
+    A
+    </div>
+    <div class="usrname">
+    Access
+    </div>
+    
+    </li>
+        
+    <li class="liitem"> 
+    
+    <div class="power">
+    P
+    </div>
+    <div class="usrname">
+    PowerPoint
+    </div>
+    
+     </li>
+    
+    <li class="liitem"> 
+    
+    <div class="recycle">
+    R
+    </div>
+    <div class="usrname">
+    Recycle Bin
+    </div>
+    
+    </li>
+    
+    <li class="liitem"> 
+    
+    <div class="computer">
+    M
+    </div>
+    <div class="usrname">
+    My PC
+    </div>
+    
+    </li>
+    
+    
+    <li class="liitem"> 
+    
+    <div class="poweroff">
+    <i class="fas fa-power-off" id="poweroff" onclick="poweroff()"></i>
+    </div>
+    
+    <div class="restart">
+    <i class="fas fa-power-off" id="restart" onclick="restart()"></i>
+    </div>
+    
+    <div class="logoff">
+    <i class="fas fa-power-off" id="logoff" onclick="logoff()"></i>
+    </div>
+    
+    </li>
+    
+    </ul>
+    
+    -->
+    
+    <!-- Windows Xp End-->
+   
+   
+    
+    
+    <!-- Windows X Start -->
+    
+    <!--
+    
+    <ul id="ulsty">
+    
+    <li class="liitem"> 
+    
+   <div class="actusronline">
+   <i class="fas fa-user-tie ausr"> 
+   </i> 
+   
+   </div>
+   
+   <div class="usrnamehead">
+      Hi John
+   </div>
+       
+   </li>
+        
+    <li class="liitem">
+    
+    <a href="https://docs.google.com/" style="text-decoration:none;">
+        
+    
+    <div class="word">
+    W
+    </div>
+    <div class="usrname">
+    Word
+    </div>
+    
+    </a>
+    
+    </li>
+    
+    <li class="liitem"> 
+    <a href="https://www.google.com/sheets/about/" style="text-decoration:none;">
+    
+    <div class="excel">
+    X
+    </div>
+    <div class="usrname">
+    Excel
+    </div>
+    
+    </a>
+    
+    </li>
+    
+    <li class="liitem"> 
+    
+    <div class="access">
+    A
+    </div>
+    <div class="usrname">
+    Access
+    </div>
+    
+    </li>
+        
+    <li class="liitem"> 
+    
+    <div class="power">
+    P
+    </div>
+    <div class="usrname">
+    PowerPoint
+    </div>
+    
+     </li>
+    
+    <li class="liitem"> 
+    
+    <div class="recycle">
+    R
+    </div>
+    <div class="usrname">
+    Recycle Bin
+    </div>
+    
+    </li>
+    
+    <li class="liitem"> 
+    
+    <div class="computer">
+    M
+    </div>
+    <div class="usrname">
+    My PC
+    </div>
+    
+    </li>
+    
+    
+    <li class="liitem"> 
+    
+    <div class="poweroff">
+    <i class="fas fa-power-off" id="poweroff" onclick="poweroff()"></i>
+    </div>
+    
+    <div class="restart">
+    <i class="fas fa-power-off" id="restart" onclick="restart()"></i>
+    </div>
+    
+    <div class="logoff">
+    <i class="fas fa-power-off" id="logoff" onclick="logoff()"></i>
+    </div>
+    
+    </li>
+    
+    </ul>   
+    
+    -->
+    
+    
+<table id="xulsty" style="background-color:lightgrey;">
+    
+  <tr>
+      
+    <th>
+        <i class="fas fa-user-tie" style="width:72px;height:60px;color:white;border-style:solid;border-color:orange;align:center;background-color:orange;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </th>
+    
+     <th>
+        <i class="fas ausr" style="width:76px;height:60px;color:black;border-style:solid;border-color:orange;border-radius:5px 5px grey;align:center;background-color:orange;margin-left:-16px;font-size:18px;padding-top:27px;padding-left:34px;text-shadow:1px 2px grey;" onclick=""> Hi John </i>  
+    </th>
+    
+    <th> 
+    <a href="https://calendar.google.com/calendar/u/0/r?pli=1" style="text-decoration:none;" target="_blank">
+    <i class="fa fa-calendar" style="width:60px;height:60px;color:white;border-style:solid;border-color:red;border-radius:5px 5px grey;align:center;background-color:red;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </a>
+    </th>
+    
+    <th>
+        <i class="fab fa-chrome" style="width:60px;height:60px;color:white;border-style:solid;border-color:blue;border-radius:5px 5px grey;align:center;background-color:blue;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </th>
+    
+    <th style="background-color:lightgrey;">
+        <i class="fab fa-github" style="width:60px;height:60px;color:white;border-style:solid;border-color:red;border-radius:5px 5px grey;align:center;background-color:red;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </th> 
+    
+    <th style="background-color:lightgrey;">
+        <i class="fas fa-tools" style="width:60px;height:60px;color:white;border-style:solid;border-color:green;border-radius:5px 5px grey;align:center;background-color:green;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </th>
+    
+  </tr>
+  
+  <tr>
+      
+    <td>
+         <i class="fa fa-database" style="width:60px;height:60px;color:white;border-style:solid;border-color:grey;border-radius:5px 5px grey;align:center;background-color:grey;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+    <td>
+        <a href="https://www.google.com/slides/about/" style="text-decoration:none;" target="_blank"> 
+        <i class="fas fa-file-powerpoint" style="width:60px;height:60px;color:white;border-style:solid;border-color:brown;border-radius:5px 5px grey;align:center;background-color:brown;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+        </a>
+    </td>
+    
+    <td>
+        <a href="https://www.google.com/forms/about/" style="text-decoration:none;" target="_blank">
+        <i class="fa fa-wpforms" style="width:60px;height:60px;color:white;border-style:solid;border-color:purple;border-radius:5px 5px grey;align:center;background-color:purple;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i>
+        </a>
+    </td>
+    
+    <td>
+        
+<a href="https://www.xbox.com/en-GB/" style="text-decoration:none;" target="_blank">
+        <i class="fab fa-xbox" style="width:60px;height:60px;color:white;border-style:solid;border-color:green;border-radius:5px 5px grey;align:center;background-color:green;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+        </a>
+    </td>
+    
+    <td style="background-color:lightgrey;">
+        <i class="fa fa-cloud-upload" style="width:60px;height:60px;color:white;border-style:solid;border-color:grey;border-radius:5px 5px grey;align:center;background-color:grey;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+    <td style="background-color:lightgrey;">
+         <i class="fas fa-recycle" style="width:60px;height:60px;color:white;border-style:solid;border-color:purple;border-radius:5px 5px grey;align:center;background-color:purple;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+  </tr>
+ 
+    <tr>
+      
+    <td>
+        <a href="https://www.microsoft.com/en-us/store/apps/windows" style="text-decoration:none;" target="_blank">
+         <i class="fab fa-google-play" style="width:60px;height:60px;color:white;border-style:solid;border-color:orange;border-radius:5px 5px grey;align:center;background-color:orange;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+         </a>
+    </td>
+    
+    <td>
+        <a href="https://www.google.com/sheets/about/" style="text-decoration:none;" target="_blank">
+        <i class="fas fa-file-excel" style="width:60px;height:60px;color:white;border-style:solid;border-color:green;border-radius:5px 5px grey;align:center;background-color:green;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+        </a>
+    </td>
+    
+    <td>
+        <i class="fab fa-facebook" style="width:60px;height:60px;color:white;border-style:solid;border-color:blue;border-radius:5px 5px grey;align:center;background-color:blue;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i>
+    </td>
+    
+    <td colspan="2" style="width:5%;background-color:lightgrey;">
+        <i class="fas fa-laptop" style="width:120px;height:60px;color:white;border-style:solid;border-color:brown;border-radius:5px 5px grey;align:center;background-color:brown;font-size:30px;padding-top:27px;padding-left:83px;" onclick=""></i> 
+    </td>
+    
+    <td style="background-color:lightgrey;">
+        <i class="fab fa-github" style="width:60px;height:60px;color:white;border-style:solid;border-color:red;border-radius:5px 5px grey;align:center;background-color:red;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+  </tr>
+  
+   <tr>
+      
+    <td>
+        <!-- <i class="fab fa-github" style="width:60px;height:60px;color:white;border-style:solid;border-color:grey;border-radius:5px 5px grey;align:center;background-color:grey;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> -->
+         
+      
+     <i class="fas fa-power-off" style="width:43px;height:60px;color:white;border-style:solid;border-color:purple;border-radius:5px 5px grey;text-align:center;background-color:purple;font-size:22px;padding-top:27px;text-shadow:1px 2px grey;" onclick="poweroff()"></i> 
+    
+    <i class="fas ausr" style="width:55px;height:55px;color:white;border-style:solid;border-color:purple;border-radius:5px 5px grey;background-color:purple;margin-top:-2px;font-size:16px;margin-left:-4px;padding-top:32px;text-shadow:1px 2px grey" onclick=""> Power </i>
+    
+  
+    
+    
+    </td>
+    
+    <td>
+        <a href="https://docs.google.com/" style="text-decoration:none;" target="_blank">
+        <i class="fas fa-file-word" style="width:60px;height:60px;color:white;border-style:solid;border-color:blue;border-radius:5px 5px grey;align:center;background-color:blue;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+        </a>
+    </td>
+    
+    <td>
+        <a href="https://account.microsoft.com/account?lang=en-hk" style="text-decoration:none;" target="_blank">
+        <i class="fab fa-microsoft" style="width:60px;height:60px;color:white;border-style:solid;border-color:brown;border-radius:5px 5px grey;align:center;background-color:brown;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i>
+        </a>
+    </td>
+    
+    <td>
+        <a href="https://www.microsoft.com/en-us/p/groove-music/9wzdncrfj3pt#activetab=pivot:overviewtab" style="text-decoration:none;" target="_blank">
+        <i class="fas fa-music" style="width:60px;height:60px;color:white;border-style:solid;border-color:orange;border-radius:5px 5px grey;align:center;background-color:orange;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+        </a>
+    </td>
+    
+    <td style="background-color:lightgrey;">
+        <i class="fa fa-folder-open" style="width:60px;height:60px;color:white;border-style:solid;border-color:grey;border-radius:5px 5px grey;align:center;background-color:grey;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+    <td style="background-color:lightgrey;">
+         <i class="fas fa-recycle" style="width:60px;height:60px;color:white;border-style:solid;border-color:purple;border-radius:5px 5px grey;align:center;background-color:purple;font-size:30px;padding-top:27px;padding-left:34px;" onclick=""></i> 
+    </td>
+    
+  </tr>
+
+  
+</table>
+
+    
+    <!-- Windows X End -->
+    
+       
+       <div id="navbar">
+        
+       <button id="icona" onclick="showwx()" style="margin-left:-5px;background-color:lightgrey;border-color:lightgrey;">  <!-- id="icona"  onclick="show() -->
+           
+        <img src="favico.png" style="width:22px;height:22px;margin-top:3px;margin-left:-23px;">
+        
+       </button>
+       
+       <i class="fas fa-laptop desicon1" style="color:green;margin-left:3px;" id="mincmd" onclick="maximize()"></i>
+       
+           <!--
+      <div id="john" style="position:fixed;cursor:pointer;line-height:0;display:block !important;">
+            
+       </div>
+       -->
+       
+       </div>
+    
+       </section>
+    
+    
+    
+       <section id="login">
+           
+           
+       <div class="icon1">
+            
+       <div class="ibox11">
+       </div>
+       
+       <div class="ibox21">
+       </div>
+       
+       <div class="ibox31">
+       </div>
+       
+       <div class="ibox41">
+       </div>
+       
+       </div>
+       
+       <div id="iconname1">
+    
+        Hi John 
+       
+       </div>
+       
+        
+        <input type="password" placeholder="Type Your Password" id="pass">
+        
+        <br>
+        
+        <div style="margin-top:5px;">
+        
+        <label class="incorrect" id="incp"> 
+        
+        </label>
+        
+        </div>
+            
+        <input type="button" value="show" id="show" onclick="visible()">
+        
+         <input type="button" value="login" id="signin" onclick="login()" style="margin-left:2px;">
+            
+       </section>
+        
+    </body>
+    
+</html>

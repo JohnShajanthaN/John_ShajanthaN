@@ -1,0 +1,1455 @@
+body {
+    margin:0px;
+    padding:0px;
+    height:300px;
+}
+
+
+a { 
+width:25px; 
+}
+
+.ibox1
+{
+    width:20px;
+    height:21px;
+    background-color:red;
+    float:left;
+}
+
+.ibox2
+{
+    width:20px;
+    height:21px;
+    background-color:green;
+    box-shadow:3px 0px lightgrey;
+    float:left;
+}
+
+.ibox3
+{
+    width:20px;
+    height:21px;
+    background-color:orange;
+    box-shadow:0px 3px lightgrey;
+    float:left;
+}
+
+.ibox4
+{
+    width:20px;
+    height:21px;
+    background-color:purple;
+    box-shadow:3px 3px lightgrey;
+    float:left;
+}
+
+#icon
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#icona
+{
+    width:90px;
+    height:29px;
+    border-radius:30px;
+    border-style:none;
+    background-color:grey;
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-style:italic;
+    color:black;
+    font-size:17px;
+    padding-left:0px;
+    padding-top:1px;
+    text-shadow:1px 1px lightgrey;
+}
+
+
+#iconname
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconadm
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconnameadm
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#iconadmwx
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconnameadmwx
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconadmw7
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconnameadmw7
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconswi
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#switchlabel
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconswiwx
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#iconswiw7
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#switchlabelwx
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#switchlabelw7
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#navbar
+{
+    width: 100%;
+    height: 29px;
+    background-color: lightgrey;
+    color: black;
+    border-color: lightgrey;
+    float: left;
+    margin-top: 96px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display:none;
+}
+
+
+#navbarxp
+{
+    width: 100%;
+    height: 29px;
+    background-color:#004e98;
+    color: black;
+    border-color: #004e98;
+    float: left;
+    margin-top: 96px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display:none;
+}
+
+
+
+#john
+{
+    width:20%;
+    height:29px;
+    background-image:linear-gradient(to right, red , yellow);
+    color:black;
+    border-color:lightgrey;
+    margin-top:96px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    display:block;
+}
+
+
+#chromesearch
+{
+    display:none;
+}
+
+.gcse-search
+{
+    display:none;
+}
+
+
+.navitem-right
+{
+    width:21%;
+    height:10%;
+    background-color:orange;
+    color:white;
+    border-color:orange;
+    text-align:center;
+    padding:2px 2px 2px 2px;
+    float:right;
+    font-weight:bold;
+    border-radius:0px;
+}
+
+
+.navitem-right:hover
+{
+    background-color:lightgrey;
+    color:purple;
+    border-color:lightgrey;
+    font-style:italic;
+}
+
+
+#ulsty
+{
+    list-style-type:none;
+    width:103px;
+    background-color:grey;
+    position:fixed;
+    padding-top:0px;
+    padding-bottom:0px;
+    display:none;
+    bottom:13px;
+}
+
+
+#xulsty
+{
+    width:50%;
+    background-color:lightgrey;
+    position:fixed;
+    padding-top:0px;
+    padding-bottom:0px;
+    display:none;
+    bottom:29px;
+    margin-left:0%;
+}
+
+
+#wxulsty
+{
+    width:58.5%;
+    height:250px;
+    background-color:lightgrey;
+    padding-top:0px;
+    padding-bottom:0px;
+    bottom:29px;
+    position:fixed;
+    bottom:14px;
+    display:none;
+}
+
+
+
+
+.liitem 
+{
+  font-size:15px;
+  letter-spacing:0px;
+  font-weight:bold;
+  color:black;
+  text-shadow:1px 1px lightgrey;
+  border-style:none;
+  border-color:orange;
+  width:136px;
+  background-color:lightgrey;
+  height:22px;
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-left:-40px;
+  padding-left:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+
+.actusronline
+{
+    width:30px;
+    height:30px;
+    border-style:none;
+    border-radius:40px;
+    border-color:green;
+    text-align:center;
+    font-weight:bold;
+    color:black;
+    background-color:white;
+    margin-top:-4px;
+    margin-left:-2px;
+}
+
+
+i.ausr
+{
+    font-size:20px;
+    padding-top:3px;
+}
+
+i.wausr
+{
+    font-size:20px;
+    padding-top:3px;
+    border-style:solid;
+    border-color:white;
+}
+
+
+.usrname
+{
+  font-size:14px;
+  letter-spacing:1px;
+  font-weight:bold;
+  color:black;
+  text-shadow:1px 1px lightgrey;
+  border-style:none;
+  border-color:orange;
+  width:90px;
+  background-color:lightgrey;
+  height:22px;
+  margin-top:-20px;
+  margin-left:37px;
+  font-style:italic;
+}
+
+.usrnamehead
+{
+  font-size:15px;
+  letter-spacing:1px;
+  font-weight:bold;
+  color:black;
+  text-shadow:1px 1px lightgrey;
+  border-style:none;
+  border-color:orange;
+  width:90px;
+  background-color:lightgrey;
+  height:22px;
+  margin-top:-24px;
+  margin-left:37px;
+  font-style:italic;
+}
+
+
+.word
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:green;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px green;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+
+.excel
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:purple;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px purple;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+
+.power
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:orange;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px orange;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+.access
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:brown;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px brown;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+
+.computer
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:blue;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px blue;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+
+.control
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:purple;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px purple;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+.recycle
+{
+    width:30px;
+    height:23px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:red;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:-2px;
+    box-shadow:3px 1px red;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+}
+
+
+.poweroff
+{
+    width:30px;
+    height:23px;
+    border-radius:30px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:brown;
+    background-color:white;
+    margin-top:-2px;
+    margin-right:12px;
+    box-shadow:3px 1px brown;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+    float:left;
+}
+
+input[type="text"]
+{
+
+    width:55%;
+    height:18px;
+    border-style:solid;
+    border-radius:25px;
+    border-width:2px;
+    margin-top:-75px;
+    margin-left:127px;
+    background-color:white;
+    padding-left:10px;
+    padding-top:3px;
+    border-color:orange;
+    box-shadow:4px 2px purple;
+    letter-spacing:1px;
+    color:purple;
+    font-size:15px;  
+
+
+}
+
+.restart
+{
+    width:30px;
+    height:23px;
+    border-radius:30px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:green;
+    background-color:white;
+    margin-top:-2px;
+    margin-right:6px;
+    box-shadow:3px 1px green;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+    float:left;
+}
+
+.logoff
+{
+    width:30px;
+    height:23px;
+    border-radius:30px;
+    border-style:none;
+    border-color:grey;
+    text-align:center;
+    font-weight:bold;
+    color:orange;
+    background-color:white;
+    margin-top:-2px;
+    margin-left:6px;
+    box-shadow:3px 1px orange;
+    padding-top:3px;
+    text-shadow:2px 1px lightgrey;
+    font-size:16px;
+    float:left;
+}
+
+
+input[type="password"]
+{
+    width:55%;
+    height:18px;
+    border-style:solid;
+    border-radius:25px;
+    border-width:2px;
+    margin-top:-75px;
+    margin-left:127px;
+    background-color:white;
+    padding-left:10px;
+    padding-top:3px;
+    border-color:orange;
+    box-shadow:4px 2px purple;
+    letter-spacing:1px;
+    color:purple;
+    font-size:15px;
+}
+
+
+
+
+input[type="button"] 
+{
+    width:25%;
+    height:25px;
+    border-style:solid;
+    border-radius:25px;
+    border-width:2px;
+    margin-top:10px;
+    margin-left:127px;
+    background-color:white;
+    padding-left:7px;
+    padding-top:1px;
+    border-color:orange;
+    box-shadow:4px 2px purple;
+    letter-spacing:1px;
+    color:purple;
+    font-size:15px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+
+
+input[type="button"]:hover
+{
+    width:25%;
+    height:25px;
+    border-style:solid;
+    border-radius:25px;
+    border-width:2px;
+    margin-top:10px;
+    margin-left:127px;
+    background-color:white;
+    padding-left:7px;
+    padding-top:1px;
+    border-color:purple;
+    box-shadow:4px 2px orange;
+    letter-spacing:1px;
+    color:orange;
+    font-size:15px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+
+#box
+{
+    margin-top:50px;
+    width:95%;
+    height:50px;
+    border-style:solid;
+    border-width:2px;
+    border-radius:50px;
+    margin-left:5px;
+    border-color:orange;
+    box-shadow:4px 2px purple;
+    display:block;
+}
+
+
+#icon1
+{
+    width:40px;
+    height:42px;
+    margin-left:60px;
+    margin-top:180px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+    float:left;
+}
+
+
+#iconname1
+{
+    width:200px;
+    height:42px;
+    margin-left:130px;
+    margin-top:-42px;
+    font-size:17px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+    font-style:italic;
+}
+
+#icon11
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconname11
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#iconwx
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconnamewx
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#iconw7
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconnamew7
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+.ibox111
+{
+    width:20px;
+    height:21px;
+    background-color:red;
+    margin-left:80px;
+    margin-top:90px;
+}
+
+
+#icon22
+{
+     width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconname22
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+#icon33
+{
+    width:40px;
+    height:42px;
+    margin-left:80px;
+    margin-top:-50px;
+    box-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+
+#iconname33
+{
+    width:150px;
+    height:42px;
+    margin-left:110px;
+    margin-top:-33px;
+    font-size:22px;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-shadow:3px 2px lightgrey;
+    display:block;
+}
+
+.ibox21
+{
+    width:20px;
+    height:21px;
+    background-color:green;
+    margin-left:100px;
+    margin-top:-21px;
+}
+
+.ibox31
+{
+    width:20px;
+    height:21px;
+    background-color:orange;
+    margin-left:80px;
+    margin-top:0px;
+}
+
+.ibox41
+{
+    width:20px;
+    height:21px;
+    background-color:purple;
+    margin-left:100px;
+    margin-top:-21px;
+
+}
+
+#startmenu
+{
+    display:block;
+}
+
+#mainscreen
+{
+    display:none;
+}
+
+
+.incorrect
+{
+    width:25%;
+    height:15px;
+    margin-left:127px;
+    background-color:white;
+    padding-left:5px;
+    padding-top:1px;
+    letter-spacing:1px;
+    color:black;
+    text-shadow:3px 1px lightgrey;
+    font-size:15px;
+    font-weight:bold;
+    font-style:italic;
+    display:none;
+}
+
+
+.desicon1
+{
+    margin-left:5%;
+    margin-right:3%;
+    margin-top:0px;
+    margin-bottom:9px;
+    color:grey;
+    font-size:18px;
+}
+
+.desicon11
+{
+    margin-left:1.5%;
+    margin-top:0px;
+    margin-bottom:9px;
+    color:grey;
+    font-size:18px;
+}
+
+
+
+.desicon2
+{
+    margin-left:11px;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-right:7px;
+    color:grey;
+    font-size:18px;
+}
+
+
+.diconname
+{
+  font-size:14px;
+  letter-spacing:0px;
+  font-weight:bold;
+  color:black;
+  text-shadow:3px 1px lightgrey;
+  height:16px;
+  margin-top:-5px;
+  margin-left:5px;
+  font-style:italic;
+  text-align:center;
+  width:50px;
+}
+
+
+#navtop
+{
+    width:19%;
+    height:29px;
+    background-color:white;
+    color:black;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    top:4px;
+    position:fixed;
+    display:none;
+}
+
+
+#navlist1
+{
+    width:40px;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    margin-top:36px;
+    display:inline;
+    display:none;
+    position:fixed;
+}
+
+#navlist2
+{
+    width:40px;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    margin-top:36px;
+    display:none;
+    position:fixed;
+}
+
+#navlist3
+{
+    width:40px;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    margin-top:36px;
+    display:none;
+    position:fixed;
+}
+
+#navlist4
+{
+    width:40px;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    margin-top:36px;
+    display:none;
+    position:fixed;
+}
+
+#navlist5
+{
+    width:40px;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    border-radius:25px;
+    box-shadow:1px 1px orange;
+    margin-top:36px;
+    display:none;
+    position:fixed;
+}
+
+
+.iboxa
+{
+    width:10px;
+    height:10px;
+    background-color:red;
+    float:left;
+}
+
+.iboxb
+{
+    width:10px;
+    height:10px;
+    background-color:green;
+    float:left;
+}
+
+.iboxc
+{
+    width:10px;
+    height:10px;
+    background-color:orange;
+    float:left;
+}
+
+.iboxd
+{
+    width:10px;
+    height:10px;
+    background-color:purple;
+    float:left;
+}
+
+.iboxe
+{
+    width:10px;
+    height:10px;
+    background-color:brown;
+    float:left;
+}
+
+#icond
+{
+    width:50px;
+    height:10px;
+    margin-left:49%;
+    top:5px;
+    box-shadow:3px 2px lightgrey;
+    position:fixed;
+    display:block;
+}
+
+
+#cmdbody
+{
+    width:170px;
+    height:150px;
+    background-color:black;
+    color:green;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:0px;
+    border-color:lightgrey;
+    border-style:solid;
+    box-shadow:2px 1px lightgrey;
+    top:70px;
+    margin-left:94px;
+    position:fixed;
+    font-size:11px;
+    padding-top:5px;
+    padding-left:3px;
+    font-weight:bold;
+    font-style:italic;
+    float:left;
+}
+
+
+#cmdbody0
+{
+    width:15px;
+    height:152px;
+    background-color:black;
+    color:green;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-right-width:0px;
+    border-top-width:1px;
+    border-style:solid;
+    border-color:lightgrey;
+    box-shadow:0px 0px lightgrey;
+    top:70px;
+    margin-left:79px;
+    position:fixed;
+    font-size:11px;
+    padding-top:5px;
+    padding-left:3px;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-style:italic;
+    float:left;
+}
+
+
+#cmdhead
+{
+    width:120px;
+    height:20px;
+    background-color:black;
+    color:white;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    box-shadow:2px 1px lightgrey;
+    top:50px;
+    margin-left:79px;
+    position:fixed;
+    font-size:10px;
+    padding-top:5px;
+    padding-left:3px;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-style:italic;
+    text-shadow:1px 1px grey;
+}
+
+
+#cmdhead0
+{
+    width:67px;
+    height:20px;
+    background-color:black;
+    color:white;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:0px;
+    border-color:lightgrey;
+    border-style:solid;
+    box-shadow:2px 1px lightgrey;
+    top:50px;
+    margin-left:199px;
+    position:fixed;
+    font-size:10px;
+    padding-top:5px;
+    padding-left:3px;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-style:italic;
+    text-shadow:1px 1px grey;
+}
+
+#ctitle
+{
+    width:35%;
+    height:2%;
+    background-color:lightgrey;
+    color:black;
+    border-width:1px;
+    border-color:lightgrey;
+    border-style:solid;
+    box-shadow:2px 1px lightgrey;
+    top:25%;
+    margin-left:5%;
+    position:fixed;
+    font-size:10px;
+    padding-top:5px;
+    padding-left:3px;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-style:italic;
+    text-shadow:1px 1px grey;
+}
+
+
+#cbutton
+{
+    width:5%;
+    height:2%;
+    background-color:lightgrey;
+    color:black;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:0px;
+    border-color:lightgrey;
+    border-style:solid;
+    box-shadow:2px 1px lightgrey;
+    top:25%;
+    margin-left:35%;
+    position:fixed;
+    font-size:10px;
+    padding-top:5px;
+    padding-left:3px;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-style:italic;
+    text-shadow:1px 1px grey;
+}
+
+#cbody
+{
+    width:35%;
+    height:40%;
+    background-color:#B0B4B0;
+    color:black;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:0px;
+    border-color:#B0B4B0;
+    border-style:solid;
+    box-shadow:2px 1px #B0B4B0;
+    top:28%;
+    margin-left:5%;
+    position:fixed;
+    font-size:11px;
+    padding-top:5px;
+    padding-left:3px;
+    font-weight:bold;
+    font-style:italic;
+    float:left;
+}
+
+
+#console
+{
+    display:none;
+}
+
+.minimize
+{
+    width:8px;
+    height:3px;
+    border-style:none;
+    float:right;
+    margin-top:3px;
+    margin-right:5px;
+}
+
+.maximize
+{
+    width:8px;
+    height:8px;
+    border-style:none;
+    float:right;
+    margin-top:1px;
+    margin-right:5px;
+}
+
+
+.exit
+{
+    width:8px;
+    height:8px;
+    border-style:none;
+    float:right;
+    margin-top:1px;
+    margin-right:5px;
+}
+
+#adminpass:focus
+{
+  width:200px;
+  height:14px;
+  margin-left:44%;
+  font-size:13px;
+  color:green;
+  position:fixed;
+  top:52.5%;
+  border-width:0.5px;
+  border-color:green;
+  box-shadow:2px 1px green;
+}
+
+
+#switchuser:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:64%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+#switchpass:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:68%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+#switchuserwx:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:64%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+#switchpasswx:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:68%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+#switchuserw7:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:64%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+#switchpassw7:focus
+{
+   width:200px;
+   height:14px;
+   margin-left:44%;
+   font-size:13px;
+   color:green;
+   position:fixed;
+   top:68%;
+   border-width:0.5px;
+   border-color:orange;
+   box-shadow:2px 1px orange;
+}
+
+
+
