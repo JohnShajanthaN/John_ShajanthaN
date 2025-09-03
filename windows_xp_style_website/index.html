@@ -1333,20 +1333,7 @@ height:25px;
        </div>
            
        </div>
-
-		<script>
-    /*function check(e)
-    {
-    alert(e.keyCode);
-    }*/
-    document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
-                alert('not allowed');
-            }
-            return false;
-    };
-    </script>
-       
+	
         <script type='text/javascript'>
 		
         $(document).ready(function()
@@ -1371,19 +1358,7 @@ height:25px;
 		
         </script>
 
-		 <script>
-document.addEventListener('keydown', function(event) {
-    // Check for Ctrl + I
-    if (event.ctrlKey && event.key === 'i') {
-        event.preventDefault();
-    }
-
-    // Check for Ctrl + Shift + I
-    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-        event.preventDefault();
-    }
-});
-</script>
+		
 
 	  <script type="text/javascript">
         
@@ -1438,6 +1413,44 @@ document.addEventListener('keydown', function(event) {
         
         return true;
     }
+
+		  function disableRightClick() 
+		  {
+  // Disable context menu
+  document.addEventListener('contextmenu', function (event) {
+    event.preventDefault()
+    return false
+  })
+
+  // Disable F12, Ctrl+Shift+I, Ctrl+U
+  document.addEventListener('keydown', function (event) {
+    if (
+      event.key === 'F12' ||
+      (event.ctrlKey && event.shiftKey && event.key === 'I') ||
+      (event.ctrlKey && event.key === 'u')
+    ) {
+      event.preventDefault()
+      return false
+    }
+  })
+
+  // Disable drag and drop for images
+  document.addEventListener('dragstart', function (event) {
+    if (event.target.tagName === 'IMG') {
+      event.preventDefault()
+      return false
+    }
+  })
+
+  // Disable text selection
+  document.addEventListener('selectstart', function (event) {
+    event.preventDefault()
+    return false
+  })
+}
+
+// Call the function when document loads
+document.addEventListener('DOMContentLoaded', disableRightClick)
     
 </script>
 
