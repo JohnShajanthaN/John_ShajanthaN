@@ -11,22 +11,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-jQuery(document).ready(function(){
-  jQuery(function() {
-        jQuery(this).bind("contextmenu", function(event) {
-            event.preventDefault();
-            alert('Right click disable in this site!!')
-        });
-    });
-});
-		 
-	 </script>
-
-	 
-
-	
-
 	 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
@@ -1253,7 +1237,7 @@ back end development .
     }*/
     document.onkeydown = function(e) {
             if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
-                alert('not allowed');
+                //alert('not allowed');
             }
             return false;
     };
