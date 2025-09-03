@@ -1296,73 +1296,65 @@ height:25px;
            
        </div>
 	
-        <script type='text/javascript'>
-		
-    
-    document.onkeydown = function(e)
-    {
-       
-  
+       <script type="text/javascript">
 
-        if ( (e.ctrlKey && 
-            (e.keyCode === 67 || 
-             e.keyCode === 86 || 
-             e.keyCode === 85 || 
-             e.keyCode === 117)
-             ) || (e.ctrlKey && e.shiftKey && e.keyCode===73) )
-        {
-                 
-            return false;
-        } 
-        else 
-        {
-            return true;
-        }
-};
+jQuery(document).ready(function () {
 
-$(document).keypress("u",function(e) 
+//Disable cut copy paste
 
-{
-  if(e.ctrlKey)
-  {
+jQuery('body').bind('cut copy paste', function (e) {
+
+e.preventDefault();
+
+});
+
+//Disable mouse right click
+
+jQuery("body").on("contextmenu",function(e){
+
 return false;
-}
-else
-{
-return true;
-}
-}
 
-);
+});
 
+});
 
 </script>
 
-<script type='text/javascript'>
-		
-        $(document).ready(function()
-		{
-            $('input').keydown(function(e)
-			{
-             if(e.keyCode==13)
-			 {       
 
-                if($(':input:eq(' + ($(':input').index(this) + 1) + ')').attr('type')=='submit')
-				{// check for submit button and submit form on enter press
-                 return true;
-                }
 
-                $(':input:eq(' + ($(':input').index(this) + 1) + ')').focus();
-
-               return false;
-             }
-
-            });
+	 
+	     <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault(); // Prevents the default context menu
         });
-		
-        </script>
+    </script>
 
-		
+	 <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                //alert('not allowed');
+            }
+            return false;
+    };
+    </script>
+
+	 <script>
+document.addEventListener('keydown', function(event) {
+    // Check for Ctrl + I
+    if (event.ctrlKey && event.key === 'i') {
+        event.preventDefault();
+    }
+
+    // Check for Ctrl + Shift + I
+    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+        event.preventDefault();
+    }
+});
+</script>
 
 	  <script type="text/javascript">
         
@@ -1422,8 +1414,8 @@ return true;
 		  {
   // Disable context menu
   document.addEventListener('contextmenu', function (event) {
-    event.preventDefault()
-    return false
+    event.preventDefault();
+    return false;
   })
 
   // Disable F12, Ctrl+Shift+I, Ctrl+U
@@ -1433,28 +1425,28 @@ return true;
       (event.ctrlKey && event.shiftKey && event.key === 'I') ||
       (event.ctrlKey && event.key === 'u')
     ) {
-      event.preventDefault()
-      return false
+      event.preventDefault();
+      return false;
     }
   })
 
   // Disable drag and drop for images
   document.addEventListener('dragstart', function (event) {
     if (event.target.tagName === 'IMG') {
-      event.preventDefault()
-      return false
+      event.preventDefault();
+      return false;
     }
   })
 
   // Disable text selection
   document.addEventListener('selectstart', function (event) {
-    event.preventDefault()
-    return false
+    event.preventDefault();
+    return false;
   })
 }
 
 // Call the function when document loads
-document.addEventListener('DOMContentLoaded', disableRightClick)
+document.addEventListener('DOMContentLoaded', disableRightClick);
     
 </script>
 
