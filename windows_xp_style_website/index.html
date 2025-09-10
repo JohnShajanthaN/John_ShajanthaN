@@ -1357,7 +1357,8 @@ document.addEventListener('keydown', function(event) {
 </script>
 
 	  <script type="text/javascript">
-        
+
+	/*	  
     function mousehandler(e)
     {
         var myevent = (isNS) ? e : event;
@@ -1368,6 +1369,8 @@ document.addEventListener('keydown', function(event) {
     document.oncontextmenu = mischandler;
     document.onmousedown = mousehandler;
     document.onmouseup = mousehandler;
+
+ */
     
     function disableCtrlKeyCombination(e)
     {
@@ -1452,11 +1455,11 @@ document.addEventListener('keydown', function(e)
     }
   })
 
-  /* Disable text selection
+  Disable text selection
   document.addEventListener('selectstart', function (event) {
     event.preventDefault();
     return false;
-  }) */
+  }) 
 }
 
 // Call the function when document loads
