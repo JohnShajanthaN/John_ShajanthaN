@@ -1,0 +1,733 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Excel By John
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for horizontal scroll */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+	
+	/* Hide scrollbar but keep scroll functionality */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropbtn1 {
+  background-color:#f9f9f9;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  </style>
+ </head>
+ <body class="bg-[#f3f3f3] font-sans select-none">
+  <!-- Top Bar -->
+  <div class="flex items-center justify-between bg-[#eaeaea] px-3 py-1 text-[13px] border-b border-gray-300">
+   <div class="flex items-center space-x-2">
+    <img alt="Green Excel icon" class="w-5 h-5" height="20" src="excel.png" width="20"/>
+    <span class="font-normal text-[13px]">
+     <b> Excel By John </b>
+    </span>
+   </div>
+   <div class="flex items-center space-x-2 bg-white rounded border border-gray-300 px-2 py-0.5 w-[280px]">
+    <i class="fas fa-search text-gray-400 text-[14px]">
+    </i>
+    <input class="w-full text-[13px] outline-none" style="border-radius:5px 10px;" placeholder="Search anything at here !!!" type="Search"/>
+   </div>
+   <div class="flex items-center space-x-3">
+    <div class="w-120 h-7 rounded-full bg-[#4a7d0e] text-white text-[13px] font-semibold flex items-center justify-center">
+     John_ShajanthaN
+    </div>
+    <button aria-label="Minimize" class="w-6 h-6 flex items-center justify-center hover:bg-gray-300 rounded">
+     <svg class="h-3 w-3 stroke-black" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <line x1="5" x2="19" y1="12" y2="12">
+      </line>
+     </svg>
+    </button>
+    <button aria-label="Maximize" class="w-6 h-6 flex items-center justify-center hover:bg-gray-300 rounded">
+     <svg class="h-3 w-3 stroke-black" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <rect height="18" rx="2" ry="2" width="18" x="3" y="3">
+      </rect>
+     </svg>
+    </button>
+    <button aria-label="Close" class="w-6 h-6 flex items-center justify-center hover:bg-red-600 rounded">
+     <svg class="h-3 w-3 stroke-black" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <line x1="18" x2="6" y1="6" y2="18">
+      </line>
+      <line x1="6" x2="18" y1="6" y2="18">
+      </line>
+     </svg>
+    </button>
+   </div>
+  </div>
+  <!-- Ribbon Menu -->
+  <div class="bg-[#f9f9f9] border-b border-gray-300 px-3 py-1 select-none">
+   <div class="flex items-center space-x-6 text-[11px] font-semibold text-gray-700">
+	
+<div class="dropdown">
+	
+  <button class="dropbtn">File</button>
+  <div class="dropdown-content">
+    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+    <a href="#"><i class="fa fa-file" aria-hidden="true"></i> New</a> 
+    <a href="#"><i class="fas fa-folder-open"></i> Open</a>
+	<a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Info</a>
+    <a href="#"><i class="fas fa-save"></i> Save</a>
+    <a href="#"><i class="fas fa-save"></i> Save As</a>
+	<a href="#"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+    <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a>
+	<a href="#"><i class="fas fa-file-export"></i> Export</a>
+    <a href="#"><i class="fa fa-window-close" aria-hidden="true"></i> Close</a>
+  </div>
+  
+</div>
+
+<div class="dropdown">	
+  <button class="dropbtn1">Home</button>
+ 
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">Insert</button>
+  
+  
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">Page Layout</button>
+ 
+  
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">Formulas</button>
+
+  
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">Data</button>
+ 
+  
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">Review</button>
+  
+  
+</div>
+
+<div class="dropdown">
+	
+  <button class="dropbtn1">View</button>
+  
+  
+</div>
+
+<div class="dropdown">  
+	
+  <button class="dropbtn1">Developer</button>
+  
+  
+</div>
+
+<div class="dropdown"> 
+	
+  <button class="dropbtn1">Help</button>
+  
+  
+</div> 
+
+<div class="dropdown"> 
+	
+  <button class="dropbtn1">Acrobat</button>
+	
+  
+</div> 
+
+
+
+	<!--
+    <button class="hover:bg-gray-200 rounded px-2 py-1 bg-[#d9d9d9] text-black">
+     Home
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Insert
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Page Layout
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Formulas
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Data
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Review
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     View
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Developer
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Help
+    </button>
+    <button class="hover:bg-gray-200 rounded px-2 py-1">
+     Acrobat
+    </button>
+	-->
+	
+   </div>
+  </div>
+  <!-- Ribbon Toolbar -->
+  <div class="bg-[#f9f9f9] border-b border-gray-300 px-3 py-2 flex flex-wrap gap-4 select-none">
+   <!-- Clipboard group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button class="flex items-center space-x-1 text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-cut text-[14px]">
+     </i>
+     <span>
+      Cut
+     </span>
+    </button>
+    <button class="flex items-center space-x-1 text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1 relative">
+     <span>
+      Copy
+     </span>
+     <i class="fas fa-caret-down text-[10px] absolute right-1 top-1.5">
+     </i>
+    </button>
+    <button class="flex items-center space-x-1 text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-paint-brush text-[14px]">
+     </i>
+     <span>
+      Format Painter
+     </span>
+    </button>
+   </div>
+   <!-- Font group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <select aria-label="Font family" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] w-[110px] font-normal">
+     <option>
+      Aptos Narrow
+     </option>
+	 <option>
+      Arial Black
+     </option>
+	 <option>
+      Bookman Old Style
+     </option>
+	 <option>
+      Calibri
+     </option>
+	 <option>
+      Century Schoolbook
+     </option>
+	 <option>
+      Georgia
+     </option>
+	 <option>
+      Vijaya
+     </option>
+    </select>
+    <select aria-label="Font size" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] w-[40px] font-normal">
+     <option>
+      8
+     </option>
+	 <option>
+      10
+     </option>
+	 <option>
+      12
+     </option>
+	 <option>
+      14
+     </option>
+	 <option>
+      16
+     </option>
+	 <option>
+      18
+     </option>
+	 <option>
+      20
+     </option>
+	 <option>
+      22
+     </option><option>
+      24
+     </option>
+	 <option>
+      26
+     </option>
+	 <option>
+      28
+     </option>
+	 <option>
+      36
+     </option>
+	 <option>
+      48
+     </option>
+	 <option>
+      72
+     </option>
+	 
+    </select>
+    <button aria-label="Increase font size" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     A
+     <sup>
+      ▲
+     </sup>
+    </button>
+    <button aria-label="Decrease font size" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     A
+     <sup>
+      ▼
+     </sup>
+    </button>
+    <button aria-label="Bold" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     <b>
+      B
+     </b>
+    </button>
+    <button aria-label="Italic" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     <i>
+      I
+     </i>
+    </button>
+    <button aria-label="Underline" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     <u>
+      U
+     </u>
+    </button>
+    <button aria-label="More font options" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] font-normal hover:bg-gray-200">
+     <i class="fas fa-caret-down">
+     </i>
+    </button>
+    <button aria-label="Font color" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-font text-[14px]" style="color:#ff0000">
+     </i>
+    </button>
+    <button aria-label="Fill color" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-fill-drip text-[14px]" style="color:#ffff00">
+     </i>
+    </button>
+    <button aria-label="Border" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-border-all text-[14px]" style="color:#000000">
+     </i>
+    </button>
+   </div>
+   <!-- Alignment group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button aria-label="Top Align" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-align-left text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Middle Align" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-align-center text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Bottom Align" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-align-right text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Orientation" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-text-height text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Wrap Text" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-align-justify text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Merge &amp; Center" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-compress-arrows-alt text-[14px]">
+     </i>
+    </button>
+   </div>
+   <!-- Number group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <select aria-label="Number format" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] w-[110px] font-normal">
+     <option>
+      General
+     </option>
+	 <option>
+      Number
+     </option>
+	 <option>
+       Currency
+     </option>
+	 <option>
+      Accounting
+     </option>
+	 <option>
+      Short Date
+     </option>
+	 <option>
+      Long Date
+     </option>
+	 <option>
+      Time
+     </option>
+	 <option>
+      Percentage
+     </option>
+	 <option>
+      Fraction
+     </option>
+	 <option>
+      Scientific
+     </option>
+	 <option>
+      Text
+     </option>
+    </select>
+    <button aria-label="Percent Style" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-percent text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Comma Style" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-th-large text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Increase Decimal" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-arrow-up text-[14px]">
+     </i>
+    </button>
+    <button aria-label="Decrease Decimal" class="w-5 h-5 border border-gray-300 rounded hover:bg-gray-200 flex items-center justify-center">
+     <i class="fas fa-arrow-down text-[14px]">
+     </i>
+    </button>
+   </div>
+   <!-- Styles group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button aria-label="Normal style" class="text-[11px] border border-gray-300 rounded px-2 py-1 w-[60px] text-black bg-white">
+     Normal
+    </button>
+    <button aria-label="Bad style" class="text-[11px] border border-red-300 rounded px-2 py-1 w-[60px] text-red-600 bg-red-100">
+     Bad
+    </button>
+    <button aria-label="Good style" class="text-[11px] border border-green-400 rounded px-2 py-1 w-[60px] text-green-700 bg-green-100">
+     Good
+    </button>
+    <button aria-label="Neutral style" class="text-[11px] border border-yellow-300 rounded px-2 py-1 w-[60px] text-yellow-700 bg-yellow-100">
+     Neutral
+    </button>
+   </div>
+   <!-- Cells group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button aria-label="Insert" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-plus-square text-[18px]">
+     </i>
+     <span>
+      Insert
+     </span>
+    </button>
+    <button aria-label="Delete" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-trash-alt text-[18px]">
+     </i>
+     <span>
+      Delete
+     </span>
+    </button>
+    <button aria-label="Format" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-sliders-h text-[18px]">
+     </i>
+     <span>
+      Format
+     </span>
+    </button>
+   </div>
+   <!-- Editing group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button aria-label="AutoSum" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-sigma text-[18px]">
+     </i>
+     <span>
+      AutoSum
+     </span>
+    </button>
+    <button aria-label="Filter" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-filter text-[18px]">
+     </i>
+     <span>
+      Sort &amp; Filter
+     </span>
+    </button>
+    <button aria-label="Find &amp; Select" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-search text-[18px]">
+     </i>
+     <span>
+      Find &amp; Select
+     </span>
+    </button>
+   </div>
+   <!-- Add-ins group -->
+   <div class="flex items-center space-x-2 border-r border-gray-300 pr-4">
+    <button aria-label="Add-ins" class="flex flex-col items-center text-[11px] text-gray-700 hover:bg-gray-200 rounded px-1 py-1">
+     <i class="fas fa-puzzle-piece text-[18px]">
+     </i>
+     <span>
+      Add-ins
+     </span>
+    </button>
+   </div>
+   <!-- Adobe Acrobat group -->
+   
+  
+   
+  </div>
+  <!-- Formula Bar -->
+  <div class="flex items-center space-x-2 border-b border-gray-300 bg-white px-3 py-1 select-none">
+   <select aria-label="Cell selection" class="text-[11px] border border-gray-300 rounded px-1 py-[2px] w-[80px] font-normal">
+    <option>
+     U16
+    </option>
+   </select>
+   <div class="flex items-center border border-gray-300 rounded w-full">
+    <span class="text-[13px] italic px-2 select-text">
+     fx
+    </span>
+    <input aria-label="Formula input" class="w-full text-[13px] px-2 py-1 outline-none" type="text"/>
+   </div>
+  </div>
+  <!-- Spreadsheet area -->
+  <div class="overflow-auto scrollbar-hide" style="height: calc(100vh - 160px);">
+   <table class="border-collapse border border-gray-200 w-full min-w-[1200px] table-fixed text-[11px] bg-white">
+    <thead>
+     <tr class="bg-[#f3f3f3] text-center text-gray-600 select-none">
+      <th class="border border-gray-300 w-[30px]  bg-green-100">
+       A
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       B
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       C
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       D
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       E
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       F
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       G
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       H
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       I
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       J
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       K
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       L
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       M
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       N
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       O
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       P
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       Q
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       R
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       S
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       T
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+	  U
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       V
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       W
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       X
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       Y
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       Z
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       AA
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       AB
+      </th>
+      <th class="border border-gray-300 w-[30px]">
+       AC
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <!-- 36 rows -->
+     <!-- Each row has 29 columns -->
+     <!-- The cell U16 is selected with a green border -->
+     <!-- Empty cells with light gray grid lines -->
+     <!-- Row numbers column is not shown in screenshot, so omitted -->
+     <!-- We'll create 36 rows with empty cells -->
+     <!-- Highlight cell U16 with green border -->
+     <!-- U is the 21st column (A=1, U=21) -->
+     <!-- So in zero-based index, column 20 -->
+     <!-- We'll add a green border on that cell in row 16 (1-based) -->
+     <!-- Tailwind doesn't support nth-child easily, so we do manually -->
+     <!-- We'll generate rows with empty cells -->
+     <!-- For row 16, column 21 cell will have border-green-600 -->
+     <!-- All other cells have border-gray-200 -->
+     <!-- We'll do this manually for row 16 -->
+     <!-- For other rows, all cells border-gray-200 -->
+     <!-- We'll do 36 rows -->
+     <!-- Row numbers not included -->
+     <!-- We'll keep the table width fixed to show horizontal scroll -->
+     <!-- The vertical scrollbar is visible on the right -->
+     <!-- The horizontal scrollbar is visible at bottom -->
+     <!-- The selected cell U16 has a green border -->
+     <!-- The cell is empty but with a green border -->
+     <!-- We'll replicate that exactly -->
+     <!-- We'll do this with a loop in code, but here we write manually -->
+     <!-- For brevity, we do it with a script tag below -->
+    </tbody>
+   </table>
+   <div class="flex items-center border border-gray-300 rounded-t-sm w-full max-w-full overflow-x-auto no-scrollbar select-none" style="height: 28px;">
+    <button class="flex items-center justify-center px-2 border-r border-gray-300 text-gray-600 cursor-default" style="width: 24px; height: 24px;">
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="flex items-center justify-center px-2 border-r border-gray-300 text-gray-600 cursor-default" style="width: 24px; height: 24px;">
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="flex space-x-[1px]">
+      <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-white text-green-700 font-semibold px-4" style="height: 24px; min-width: 60px;">
+        <a href="Projects/1/p1.html" target="_blank"> Automated Procurement System </a>
+      </button>
+      <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-gray-100 text-gray-700 px-4" style="height: 24px; min-width: 60px;">
+                <a href="Projects/2/p2.html" target="_blank"> Automated Payslip Generator </a>
+      </button>
+      <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-gray-100 text-gray-700 px-4" style="height: 24px; min-width: 60px;">
+        <a href="Projects/3/p3.html" target="_blank"> Income Tax Calculation </a>
+      </button>
+	  <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-gray-100 text-gray-700 px-4" style="height: 24px; min-width: 60px;">
+        <a href="Projects/4/p4.html" target="_blank"> School-Report-Card-and-Marksheet-Template </a>
+      </button>
+	  <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-gray-100 text-gray-700 px-4" style="height: 24px; min-width: 60px;">
+        <a href="Projects/5/p5.html" target="_blank"> Employee Attendance Schedule </a>
+      </button>
+    </div>
+
+    <button class="flex items-center justify-center border border-gray-300 border-b-0 rounded-t-sm bg-gray-100 text-gray-700 font-bold px-2 ml-1" style="height: 24px; min-width: 24px;">
+      +
+    </button>
+  </div>
+  </div>
+   
+  </div>
+  
+  
+  <script>
+   const tbody = document.querySelector("tbody");
+    for (let r = 1; r <= 36; r++) {
+      const tr = document.createElement("tr");
+      for (let c = 1; c <= 29; c++) {
+        const td = document.createElement("td");
+        td.className = "border border-gray-200 w-[30px] h-[20px]";
+        if (r === 16 && c === 21) {
+          td.className =
+            "border border-green-600 w-[30px] h-[20px]";
+        }
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  </script>
+ </body>
+</html>
