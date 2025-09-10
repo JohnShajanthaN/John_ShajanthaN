@@ -938,7 +938,7 @@ function labnol()
 }
 
 function prepostseo()  
-{w
+{
     
       if( document.getElementsByClassName('gsc-input')[2].value=="" )
    {
@@ -960,7 +960,7 @@ function prepostseo()
     document.getElementById("icond").style.display="block";
    }
     
-}a
+}
 
 function haveibeenpwned()
 {
